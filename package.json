@@ -24,6 +24,7 @@
     "install": "neon build --release",
     "prepublishOnly": "neon build && tsc -d",
     "example": "RUST_LOG=debug ts-node -T example/example.tsx",
+    "perf-test": "ts-node -T src/core/perfTest.ts",
     "example-calc": "RUST_LOG=debug ts-node -T example/react-calculator.tsx"
   },
   "devDependencies": {
